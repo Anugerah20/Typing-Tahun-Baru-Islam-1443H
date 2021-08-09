@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tahun Baru Islam</title>
+</head>
+<!-- style css -->
+<style>
+     :root {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: rgb(20, 20, 83);
+        font-family: sans-serif;
+    }
+    
+    #selamatAnimasi {
+        color: #fff;
+        text-align: center;
+        margin-top: 300px;
+        letter-spacing: 1.8px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+</style>
+
+<body onload="masi()">
+    <div id="selamatAnimasi"></div>
+
+    <!-- script js -->
+    <script>
+        var i = 0;
+        var animasi = 'Selamat Tahun Baru Islam Ke-1443 Hijriah';
+        var kecepatan = 70; // cepat tulisan 80 milisecond
+
+        function masi() {
+            if (i < animasi.length) {
+                document.getElementById('selamatAnimasi').innerHTML += animasi.charAt(i);
+                i++;
+                setTimeout(masi, kecepatan);
+            }
+        }
+    </script>
+</body>
+
+</html>
